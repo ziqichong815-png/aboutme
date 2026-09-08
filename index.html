@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light dark">
+<meta name="color-scheme" content="light">
 <meta name="description" content="Chris Chong 钟子麒 — Marketing & Growth Systems Builder. 品牌增长与系统搭建：KOC、广告、AI / Notion 系统。MKTG Stories 行销日志。">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Chris Chong 钟子麒 · Marketing & Growth Systems Builder">
 <meta property="og:description" content="Chris Chong 钟子麒 — Marketing & Growth Systems Builder. 品牌增长与系统搭建：KOC、广告、AI / Notion 系统。MKTG Stories 行销日志。">
 <meta property="og:url" content="https://aboutme.mktg-stories.com/">
 <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20100%20100%27%3E%3Crect%20x%3D%276%27%20y%3D%276%27%20width%3D%2788%27%20height%3D%2788%27%20rx%3D%2716%27%20fill%3D%27%23F1531E%27/%3E%3Cpath%20d%3D%27M26%2024h48v38h-10l-7%2011-7-11h-24z%27%20fill%3D%27%23FBF7F0%27/%3E%3Crect%20x%3D%2740%27%20y%3D%2737%27%20width%3D%279%27%20height%3D%279%27%20fill%3D%27%23F5C518%27/%3E%3Crect%20x%3D%2753%27%20y%3D%2737%27%20width%3D%279%27%20height%3D%279%27%20fill%3D%27%23F5C518%27/%3E%3C/svg%3E">
-<style>*{}img{max-width:100%}[hidden]{display:none!important}</style>
+<style>img{max-width:100%}[hidden]{display:none!important}</style>
 <title>Chris Chong 钟子麒</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,23 +26,8 @@
     --sans:"Noto Sans SC","Archivo",system-ui,sans-serif;
     --mono:"Space Mono",ui-monospace,monospace;
   }
-  @media (prefers-color-scheme:dark){
-    :root:not([data-theme="light"]){
-      --paper:#171310;--ink:#F3EDE3;--ink-soft:#A79C8E;--line:#332B23;
-      --surface:#211A15;--surface-2:#1D1712;--orange:#FF6A34;--orange-ink:#FF8659;--yellow:#F7CE3A;
-      --dot:rgba(243,237,227,0.08);
-      --shadow:0 1px 0 rgba(0,0,0,0.3), 0 20px 44px -28px rgba(0,0,0,0.8);
-    }
-  }
-  :root[data-theme="dark"]{
-    --paper:#171310;--ink:#F3EDE3;--ink-soft:#A79C8E;--line:#332B23;
-    --surface:#211A15;--surface-2:#1D1712;--orange:#FF6A34;--orange-ink:#FF8659;--yellow:#F7CE3A;
-    --dot:rgba(243,237,227,0.08);
-    --shadow:0 1px 0 rgba(0,0,0,0.3), 0 20px 44px -28px rgba(0,0,0,0.8);
-  }
-
   *{box-sizing:border-box}
-  html{scroll-behavior:smooth}
+  html{scroll-behavior:smooth;color-scheme:light}
   body{
     margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);
     font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased;
@@ -191,19 +176,16 @@
   /* CONTACT */
   #contact{border-top:none}
   .contact-card{background:var(--ink);color:var(--paper);border-radius:22px;padding:clamp(34px,5vw,58px);position:relative;overflow:hidden}
-  :root[data-theme="dark"] .contact-card,:root:not([data-theme="light"]) .contact-card{border:1px solid var(--line)}
   .contact-card .deco{position:absolute;right:-30px;bottom:-30px;opacity:0.12}
   .contact-card .eyebrow{color:var(--yellow)}
   .contact-card .eyebrow::before{background:var(--yellow)}
   .contact-card h2{font-family:var(--sans);font-weight:900;font-size:clamp(26px,4vw,40px);line-height:1.2;margin:18px 0 16px;max-width:20ch;color:var(--paper)}
   .contact-card p.sub{color:rgba(251,247,240,0.72);max-width:48ch;font-size:16px}
-  :root[data-theme="dark"] .contact-card p.sub,:root:not([data-theme="light"]) .contact-card p.sub{color:var(--ink-soft)}
   .contact-actions{display:flex;flex-wrap:wrap;gap:13px;margin-top:30px;position:relative;z-index:2}
   .c-wa{background:var(--orange);color:#fff}
   .c-mail{background:transparent;color:var(--paper);border:1.5px solid rgba(251,247,240,0.35)}
   .c-mail:hover{border-color:var(--yellow);color:var(--yellow)}
   .contact-meta{margin-top:26px;font-family:var(--mono);font-size:13px;letter-spacing:0.03em;color:rgba(251,247,240,0.62);display:flex;flex-wrap:wrap;gap:8px 22px}
-  :root[data-theme="dark"] .contact-meta,:root:not([data-theme="light"]) .contact-meta{color:var(--ink-soft)}
 
   footer{padding:40px 0 60px;color:var(--ink-soft);font-size:13px}
   .foot-inner{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;align-items:center;border-top:1px solid var(--line);padding-top:26px}
@@ -260,7 +242,6 @@
       <a href="#about"><span class="L-zh">关于</span><span class="L-en">About</span></a>
       <a class="nav-cta" href="#contact"><span class="L-zh">聊聊项目</span><span class="L-en">Let's talk</span></a>
       <button class="icon-btn lang-btn" id="lang" aria-label="Switch language"><span class="L-zh">EN</span><span class="L-en">中</span></button>
-      <button class="icon-btn theme-btn" id="theme" aria-label="切换深浅色 / Toggle theme">◐</button>
     </nav>
   </div>
 </header>
@@ -523,16 +504,6 @@
       var en=root.getAttribute('data-lang')==='en';
       root.setAttribute('data-lang', en?'zh':'en');
       try{localStorage.setItem('cc-lang', en?'zh':'en');}catch(e){}
-    });
-
-    /* theme */
-    var themeBtn=document.getElementById('theme');
-    function curTheme(){var s=root.getAttribute('data-theme');if(s)return s;return window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}
-    try{var saved=localStorage.getItem('cc-theme');if(saved)root.setAttribute('data-theme',saved);}catch(e){}
-    themeBtn.addEventListener('click',function(){
-      var next=curTheme()==='dark'?'light':'dark';
-      root.setAttribute('data-theme',next);
-      try{localStorage.setItem('cc-theme',next);}catch(e){}
     });
 
     /* access gate (soft, client-side) */
