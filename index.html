@@ -193,15 +193,15 @@
   :focus-visible{outline:2.5px solid var(--orange);outline-offset:3px;border-radius:4px}
 
   /* GATE */
-  .gate{position:fixed;inset:0;z-index:1000;background:#17120E;display:flex;align-items:center;justify-content:center;padding:24px}
-  .gate-box{width:100%;max-width:360px;text-align:center;color:#F7F1E7;display:flex;flex-direction:column;align-items:center;gap:12px}
-  .gate-box h2{font-family:var(--display);font-weight:800;font-size:24px;color:#F7F1E7;margin:2px 0 0}
-  .gate-box .ghint{font-size:13.5px;color:#B9AE9F;line-height:1.5}
+  .gate{position:fixed;inset:0;z-index:1000;background:var(--paper);display:flex;align-items:center;justify-content:center;padding:24px}
+  .gate-box{width:100%;max-width:360px;text-align:center;color:var(--ink);display:flex;flex-direction:column;align-items:center;gap:12px}
+  .gate-box h2{font-family:var(--display);font-weight:800;font-size:24px;color:var(--ink);margin:2px 0 0}
+  .gate-box .ghint{font-size:13.5px;color:var(--ink-soft);line-height:1.5}
   #gate-form{display:flex;flex-direction:column;gap:10px;width:100%;margin-top:6px}
-  #gate-input{width:100%;padding:13px 15px;border-radius:11px;border:1px solid #3A3128;background:#221A14;color:#F7F1E7;font-size:15px;text-align:center;font-family:var(--sans)}
-  #gate-input::placeholder{color:#8A7F71}
+  #gate-input{width:100%;padding:13px 15px;border-radius:11px;border:1px solid var(--line);background:#fff;color:var(--ink);font-size:15px;text-align:center;font-family:var(--sans)}
+  #gate-input::placeholder{color:var(--ink-soft)}
   #gate-form button{background:var(--orange);color:#fff;border:none;border-radius:11px;padding:13px;font-weight:800;font-size:15px;cursor:pointer;font-family:var(--sans)}
-  .gate-err{color:#FF8659;font-size:13px;margin-top:2px}
+  .gate-err{color:var(--orange-ink);font-size:13px;margin-top:2px}
 </style>
 </head>
 <body>
